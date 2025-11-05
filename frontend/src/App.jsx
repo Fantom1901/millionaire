@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import PrizeLadder from './components/PrizeLadder';
 import styles from './App.module.scss';
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = '/api';
 
 function App() {
   const [gameState, setGameState] = useState({
