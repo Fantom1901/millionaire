@@ -1,0 +1,68 @@
+.ladder {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  min-width: 250px;
+}
+@media (min-width: 768px) {
+  .ladder {
+    display: block;
+    min-width: 100%;
+  }
+}
+@media (min-width: 576px) {
+  .ladder {
+    min-width: 100%;
+  }
+}
+.ladder {
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.ladderTitle {
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.ladderItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  margin-bottom: 2px;
+  border-radius: 4px;
+  transition: background-color 0.2s, color 0.2s;
+}
+.ladderItem .level {
+  font-weight: bold;
+  color: #ddd;
+}
+.ladderItem .prize {
+  color: #ddd;
+}
+
+.safe {
+  font-weight: bold;
+  border-left: 5px solid #ff9800;
+}
+
+.active {
+  background-color: #ff9800;
+  color: #000;
+}
+.active .level, .active .prize {
+  color: #000;
+}
+
+.passed {
+  background-color: #2e7d32;
+}
+.passed .level, .passed .prize {
+  color: #fff;
+}
+
+/*# sourceMappingURL=PrizeLadder.module.css.map */
